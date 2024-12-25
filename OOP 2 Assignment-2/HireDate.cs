@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace OOP_2_Assignment_2
 {
-    public class HireDate : Employee 
+    public class HireDate 
     {
 
         public int day;
         public int month;
         public int year;
         public DateTime date;
-        
-        public HireDate(int ID, string Name, SecurityLevel securityLevel, float Salary, Gender gender, HireDate hireDate) : base(ID, Name, securityLevel, Salary, gender, hireDate)
+
+        public HireDate(int year, int month, int day)
         {
-
-
+            date = new DateTime(year, month, day);
         }
+
 
         public DateTime GetDate()
         {
